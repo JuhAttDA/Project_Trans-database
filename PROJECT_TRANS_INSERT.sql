@@ -24,17 +24,17 @@ INSERT INTO Trailer (PLATE, MODEL_B, MAX_TRAILER_WEIGHT_F1, TRAILER_WEIGHT_G, CA
 VALUES
 ('WTR123', 'Schmitz Cargobull', 25000, 7000, 'O', 'Standard 13.6m'),
 ('XTR456', 'Krone', 27000, 7200, 'O', 'Standard'),
-('XTR719', 'Kögel', 26000, 7100, 'O', 'Standard'),
+('XTR719', 'KÃ¶gel', 26000, 7100, 'O', 'Standard'),
 ('VTR321', 'Schmitz Cargobull', 28000, 7300, 'O', 'Standard'),
 ('XZTR654', 'Krone', 25000, 7000, 'O', 'Standard'),
 ('VTR234', 'Schmitz Cargobull', 25000, 7000, 'O', 'Standard 13.6m'),
 ('VTR345', 'Krone', 27000, 7200, 'O', 'Standard'),
-('WTR456', 'Kögel', 26000, 7100, 'O', 'Standard'),
+('WTR456', 'KÃ¶gel', 26000, 7100, 'O', 'Standard'),
 ('VTR567', 'Schmitz Cargobull', 28000, 7300, 'O', 'Standard'),
 ('XTR678', 'Krone', 25000, 7000, 'O', 'Standard'),
-('XTR789', 'Kögel', 27000, 7200, 'O', 'Standard'),
+('XTR789', 'KÃ¶gel', 27000, 7200, 'O', 'Standard'),
 ('XTR890', 'Schmitz Cargobull', 26000, 7100, 'O', 'Standard'),
-('ZTR901', 'Kögel', 25000, 7000, 'O', 'Standard'),
+('ZTR901', 'KÃ¶gel', 25000, 7000, 'O', 'Standard'),
 ('ZTR012', 'Krone', 28000, 7300, 'O', 'Standard'),
 ('ZTR123', 'Schmitz Cargobull', 26000, 7100, 'O', 'Standard');
 
@@ -176,7 +176,7 @@ VALUES
 (13, 'Aarhus Logistics ApS', 'DK45678912', 'DK45 6789 1234 5678 12', 'Store'),
 (14, 'Copenhagen 3 Storage ApS', 'DK67890123', 'DK67 8901 2345 6789 01', 'Warehouse'),
 (15, 'Aarhus  Logistics ApS', 'DK78901234', 'DK78 9012 3456 7890 12', 'Distribution Center'),
-(16, 'Tallinn Pallet OÜ', 'EE12345678', 'EE12 3456 7890 1234 5678', 'Distribution Center'),
+(16, 'Tallinn Pallet OÃœ', 'EE12345678', 'EE12 3456 7890 1234 5678', 'Distribution Center'),
 (17, 'Helsinki Storage Oy', 'FI12345678', 'FI12 3456 7890 1234 5678', 'Cold Storage'),
 (18, 'Helsinki 2 Logistics Oy', 'FI34567812', 'FI34 5678 9012 3456 78', 'Warehouse'),
 (19, 'Turku Pallet Oy', 'FI45678912', 'FI45 6789 1234 5678 12', 'Distribution Center'),
@@ -519,9 +519,9 @@ VALUES
 (96,'LTL','','', 'Machinery',5, 'Crates',3900,'Unloaded','2025-09-05',99,'2025-09-10',40),
 (96,'LTL','','', 'Automotive Parts',7, 'Pallet',6800,'Unloaded','2025-09-14',101,'2025-09-19',41),
 (97, 'FTL','','', 'Electronics',560, 'Boxes',5400,'Unloaded','2025-09-18',84,'2025-09-24',42),
-(98, 'FTL','PO112588','', 'Textiles',16, 'Crates',16000,'Unloaded','2025-09-22',69,'2025-09-27',38),
-(99, 'FTL','','', 'Furniture',25, 'Pallet',22000,'Unloaded','2025-09-14',70,'2025-09-22',39),
-(100, 'FTL','','X9334', 'Electronics',28, 'Crates',22000,'Unloaded','2025-09-24',71,'2025-09-30',40);
+(98, 'FTL','PO112588','', 'Textiles',16, 'Crates',16000,'Loaded','2025-09-22',69,'2025-09-27',38),
+(99, 'FTL','','', 'Furniture',25, 'Pallet',22000,'Loaded','2025-09-14',70,'2025-09-22',39),
+(100, 'FTL','','X9334', 'Electronics',28, 'Crates',22000,'Loaded','2025-09-24',71,'2025-09-30',40);
 
 
 
@@ -734,5 +734,6 @@ VALUES
 ('Service', 'INV20251004', 1500.00, 'EUR', '2025-10-03', 1),
 ('Service', 'INV20251005', 1200.00, 'EUR', '2025-10-05', 1),
 ('Toll fee', 'INV20251006', 5000.00, 'EUR', '2025-10-03', 1);
+
 
 
