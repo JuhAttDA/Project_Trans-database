@@ -110,12 +110,12 @@ CREATE TABLE Costs (
 
 
 CREATE TABLE ProceedsLogtable (
-    Insert_date date , 
+    Insert_date datetime2(0) , 
     Remarks NVARCHAR (15)
 );
 
 CREATE TABLE ShipmentLogtable (
-    Insert_date date , 
+    Insert_date datetime2(0) , 
     Remarks NVARCHAR (15)
 );
 GO
@@ -160,7 +160,7 @@ GO
 
 CREATE VIEW MonthlyRevenueView
 AS
-    SELECT  SUM (Amount) Összeg,MONTH(Payment_Date) Hónap  FROM Proceeds
+    SELECT  SUM (Amount) Ã–sszeg,MONTH(Payment_Date) HÃ³nap  FROM Proceeds
         WHERE YEAR(Payment_Date)= '2025'
         GROUP BY MONTH(payment_date);
     GO
@@ -182,6 +182,7 @@ CREATE VIEW TopCustomersView
  CREATE INDEX FreightTrailerID_IX
         ON Freight (Trailer_ID);
         
+
 
 
 
